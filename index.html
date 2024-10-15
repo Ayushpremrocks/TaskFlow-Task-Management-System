@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Task Management System</h1>
+
+    <div id="currentDateTime"></div>
+
+    <button id="toggle-theme" aria-label="Toggle dark/light mode">
+        <span class="icon-sun">☀</span>
+        <span class="icon-moon" style="display: none;">🌙</span>
+    </button>
+
+    <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Enter task" required>
+        <select id="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <input type="date" id="deadline" required>
+        <input type="time" id="time" placeholder="Time (optional)">
+        <button type="submit">Add Task</button>
+    </form>
+
+    <div id="sortButtons">
+        <button id="sortByDeadline">Sort by Deadline</button>
+        <button id="sortByPriority">Sort by Priority</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <script src="/static/js/script.js"></script>
+
+    <script>
+        function showSuccessMessage(message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = message;
+            messageDiv.className = 'success-message';
+            document.body.appendChild(messageDiv);
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
