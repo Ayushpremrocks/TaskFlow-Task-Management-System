@@ -17,7 +17,7 @@ TaskFlow is a web-based task management application that helps you organize and 
 - **Frontend**: HTML, CSS, JavaScript
 - **Data Management**: Priority Queue (Heap)
 - **Styling**: Custom CSS with light and dark mode support
-
+---
 ## Project Structure
 ```plaintext
 TaskFlow/
