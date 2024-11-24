@@ -1,6 +1,17 @@
 # TaskFlow: Task Management System
 
+## About the Project
+
 TaskFlow is a web-based task management application that helps you organize and prioritize your tasks effectively. It features a user-friendly interface for managing tasks, sorting by priority or deadline, and toggling between light and dark themes.
+
+- **Light Mode**
+  
+   ![Screenshot of the model](assets/Light-Mode.png)
+
+- **Dark Mode**
+  
+   ![Screenshot of the model](assets/Dark-Mode.png)
+
 ---
 ## Features
 
